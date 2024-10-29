@@ -94,3 +94,37 @@
     - É quando o Google entrega os resultados da pesquisa para o usuário, levando 
       em consideração fatores como localização e tipo de dispositivo
 
+### `Rendering`
+
+  - É o processo de transformar o JavaScript em HTML. 
+  - O robô precisa interpretar o JavaScript como se fosse HTML para entender o conteúdo da página.
+  - O Crawler pode encontrar páginas que não estão completamente renderizadas, ou seja, construídas principalmente com JavaScript. 
+    - Isso requer uma fila de renderização antes que o conteúdo possa ser indexado. 
+
+### `URL`
+  
+  Uma URL é um localizador de recursos único, como uma página HTML, um arquivo JavaScript, uma imagem ou um vídeo. 
+
+  `Melhores práticas de URLs:`
+    
+  - É importante entender que as URLs não devem conter caracteres especiais ou espaços, 
+  sendo convertidas para o formato ASCII válido. 
+    
+    `Ao criar uma URL, é recomendado que ela seja:`
+      - Simples, 
+      - Descritiva,
+      - Contenha palavras relevantes. 
+      
+      `Além disso, é importante considerar a transformação para UTF-8 e evitar práticas ruins, como:`
+      - O uso de caracteres especiais, underscores e espaços. 
+
+      `Problemas comuns podem surgir quando não há um padrão na estrutura da URL, como:`
+      - A presença de muitos parâmetros de pesquisa. 
+      
+      `Para resolver esses problemas`, é necessário criar uma estrutura de URL organizada e inteligível, 
+      bloquear o acesso a URLs problemáticas no arquivo robots.txt e evitar o uso de IDs de sessão nas URLs. 
+      
+      Também é importante considerar o uso de certificados SSL para encriptar os dados e transformar o HTTP em `HTTPS`. 
+      O Google considera URLs com e sem www como diferentes, portanto, é recomendado adicionar todas as versões no 
+      Search Console e trabalhar com redirecionamentos canônicos para evitar conteúdo duplicado.
+      
