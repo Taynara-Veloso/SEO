@@ -220,3 +220,65 @@
     </url>
   </urlset>
   ```
+
+### `Robots.txt`
+
+  Gerenciamento de tráfego para o crawler
+
+  - Cuidados com a sobrecarga de requisições
+    - O robots.txt permite definir permissões e restrições para os bots de busca. 
+
+  - Não é um mecanismo para manter páginas fora do Google
+    - Para isso, podemos usar a estratégia de bloquear indexação com `noindex`
+
+  - Pode manter arquivos fora do Google
+    - É importante ressaltar que o robots.txt não impede que as páginas sejam indexadas pelo Google, mas pode ser usado para bloquear arquivos específicos, como áudio, imagem, vídeo, scripts ou CSS. 
+    - No entanto, é preciso ter cuidado ao bloquear esses arquivos para não afetar a funcionalidade das páginas. 
+
+    - O arquivo robots.txt deve ser criado na raiz do site, seguindo algumas regras simples. 
+      ``` 
+      Serviços de criação de sites como Wix ou Blogger, não precisa dessa etapa, pois o gerenciamento é feito conforme a plataforma 
+      ```
+      - Criar um arquivo de nome `robots.txt`.(Em formato UTF-8, max 500kib)
+      - Criar regras desejadas.
+      - Criar na raiz do código.
+
+  É possível definir diretivas para diferentes user-agents, como o Googlebot, e especificar quais URLs são permitidas ou negadas. 
+
+  `A regra fundamental é que toda url será aceita, a menos que seja negada`
+  ```
+  User-agent: Googlebot
+  Disallow: /nogooglebot/
+
+  User-agent: *
+  Allow: /
+
+  Sitemap: https://www.example.com/sitemap.xml
+  ```
+
+  `Exemplo 2:`
+
+  ```
+  # Examplo 1: block only Googlebot(Robô do Google)
+
+  User-agent: Googlebot
+  Disallow: /
+
+  # Examplo 2: block Googlebot and Adsbot
+
+  User-agent: Googlebot
+  User-agent: AdsBot-Google
+  Disallow: /
+
+  # Examplo 3: block all crawlers except Adsbot (Adsbot crawlers must be named explicitly)
+
+  User-agent: *
+  Disallow: /
+  Disallow: /*.xls$
+  Allow: /public/
+
+  ```
+  É importante lembrar que o robots.txt funciona apenas no domínio principal e não nos subdomínios. 
+  Além disso, pode haver uma demora de até 24 horas para que as alterações no arquivo sejam refletidas.
+
+  Para mais informações acesse a [documentação](https://developers.google.com/search/docs/crawling-indexing/robots/intro?hl=pt-br)
