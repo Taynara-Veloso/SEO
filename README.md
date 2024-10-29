@@ -191,3 +191,32 @@
           utilizados múltiplos, apenas separando por vírgulas. 
         -->
       ```
+
+### `Sitemap`
+
+  - É um arquivo que lista todas as páginas do seu site. 
+  - Ele ajuda os mecanismos de busca a encontrar e indexar seu site de forma eficiente. 
+  O Sitemap é útil para:
+  - comunicar páginas novas, atualizadas e/ou relevantes 
+  - fornecer informações detalhadas sobre o conteúdo do site.
+    - Vídeos: duração, avaliação, restrição de idade.
+    - Imagem: Localização da imagem.
+    - Notícias: título e data de publicação.
+  - É especialmente recomendado para sites grandes e complexos. 
+  - Sites novos.
+  
+  Existem várias maneiras de criar um Sitemap, incluindo o uso de geradores online ou ferramentas como o Screaming Frog. 
+  Recomendamos o uso do [xml-sitemaps.com](https://www.xml-sitemaps.com/) se você não tiver uma ferramenta que já crie o Sitemap para você.
+
+  `Exemplo de xml:`
+  ```xml
+  <?xml version="1.0" encoding="UTF-8"?>
+  <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+      <loc>https://www.example.com/foo.html</loc>
+      <lastmod>2022-06-04</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+    </url>
+  </urlset>
+  ```
