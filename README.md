@@ -79,3 +79,18 @@
   - `Lighthouse` — é uma ferramenta de código aberto e automatizada que monitora o desempenho do site. O Lighthouse tem diversas métricas que o PageSpeed Insights não tem, como acessibilidade e SEO. Há dois métodos de usar essa ferramenta: a primeira é instalar a extensão; a segunda é clicar com o botão direito na página que deseja analisar e selecionar Inspecionar e depois clicar em Lighthouse.
 
   - `Search Console` — para visualizar o relatório de Core Web Vitals nessa ferramenta, basta ir até a seção Melhorias. Diferente do Lighthouse e do PageSpeed Insights, o Search Console permite verificar todas as páginas do seu site juntas.
+
+### `3 Estágios do Google`
+  Como trabalham os robôs e algoritmos do Google:
+
+  - CRAWLING
+    - É quando o robô do Google procura na internet por textos, imagens e vídeos
+    
+  - INDEXING
+    - É quando o algoritmo do Google observa o conteúdo das páginas, como título, 
+      imagens e vídeos, e decide se a página será indexada
+    
+  - SERVING
+    - É quando o Google entrega os resultados da pesquisa para o usuário, levando 
+      em consideração fatores como localização e tipo de dispositivo
+
