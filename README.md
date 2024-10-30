@@ -282,3 +282,32 @@
   Além disso, pode haver uma demora de até 24 horas para que as alterações no arquivo sejam refletidas.
 
   Para mais informações acesse a [documentação](https://developers.google.com/search/docs/crawling-indexing/robots/intro?hl=pt-br)
+
+### Block Indexing(Bloqueando a indexação)
+
+  `Como bloquear a indexação do Google usando a estratégia "noindex".` 
+  
+  Essa estratégia permite que solicitemos ao Google que remova uma página dos resultados de busca. No entanto, é importante lembrar que essa estratégia não funcionará se a página estiver bloqueada no arquivo "robots.txt". 
+  
+  - A implementação é simples, basta adicionar uma meta tag com o nome "robots" e o conteúdo "noindex". 
+  - Isso funciona para todos os crawlers. 
+  - Também é possível adicionar outras estratégias, como "nofollow", para evitar que os links dentro da página sejam seguidos.
+
+  `Exemplo 1 - Usando CMS`
+  ```html
+    <meta name="robots" content="noindex"> <!-- todos os crawlers -->
+    <meta name="googlebot" content="noindex"> <!-- apenas o googlebot -->
+  ```
+  `Exemplo 2 - Adicionando no Header da requisição`
+
+  - Utilizado para arquivos no geral, como pdf, videos, imagens, etc...
+  ```
+    X-Robots-Tag: noindex
+  ```
+  #### `Problemas`
+
+  - Dependendo da relevancia da página, o google pode demorar meses para remover ela das pesquisas
+  - `robots.txt` pode causar conflito com essa estratégia
+  
+  Para entender melhor o processo acesse o [suporte do google](https://developers.google.com/search/docs/crawling-indexing/block-indexing?hl=pt-br&sjid=429931964660093021-SA)
+
