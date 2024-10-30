@@ -283,7 +283,7 @@
 
   Para mais informações acesse a [documentação](https://developers.google.com/search/docs/crawling-indexing/robots/intro?hl=pt-br)
 
-### Block Indexing(Bloqueando a indexação)
+### `Block Indexing(Bloqueando a indexação)`
 
   `Como bloquear a indexação do Google usando a estratégia "noindex".` 
   
@@ -311,3 +311,30 @@
   
   Para entender melhor o processo acesse o [suporte do google](https://developers.google.com/search/docs/crawling-indexing/block-indexing?hl=pt-br&sjid=429931964660093021-SA)
 
+### `Canonicalization`
+
+  `canonicalização e URLs canônicas:` 
+
+ - A canonicalização é o processo de determinar qual é a URL verdadeira para o Google, quando há páginas duplicadas ou conteúdo duplicado. 
+ - Isso pode acontecer quando há páginas com argumentos de filtro de busca, páginas com HTTP e HTTPS, ou versões de teste que ficaram online. 
+ - O Google determina a URL canônica, mas podemos ajudar indicando qual é a página verdadeira. 
+ - Podemos fazer isso através de redirecionamentos e do uso do atributo "relation canonical" no HTML. 
+ - É importante sempre referenciar a URL canônica ao compartilhar conteúdo e evitar informações divergentes. 
+ - O Google dará preferência ao HTTPS e considerará as páginas sugeridas no sitemap como canônicas.
+
+ ```html
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="canonical" href="https://example.com/products"/>
+      <title>Document</title>
+    </head>
+    <body>
+    </body>
+  </html>
+ ```
+ `arquivos não HTML`
+ ```
+  Link: <https://example.com/downloads/products-img.pdf>; rel="canonical"
+ ```
