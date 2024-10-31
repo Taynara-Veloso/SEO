@@ -315,7 +315,7 @@
 
   `canonicalização e URLs canônicas:` 
 
- - A canonicalização é o processo de determinar qual é a URL verdadeira para o Google, quando há páginas duplicadas ou conteúdo duplicado. 
+ - A canonicalização é o processo de determinar qual é a `URL verdadeira` para o Google, quando há páginas duplicadas ou conteúdo duplicado. 
  - Isso pode acontecer quando há páginas com argumentos de filtro de busca, páginas com HTTP e HTTPS, ou versões de teste que ficaram online. 
  - O Google determina a URL canônica, mas podemos ajudar indicando qual é a página verdadeira. 
  - Podemos fazer isso através de redirecionamentos e do uso do atributo "relation canonical" no HTML. 
@@ -338,3 +338,23 @@
  ```
   Link: <https://example.com/downloads/products-img.pdf>; rel="canonical"
  ```
+
+### `Redirects`
+
+  `Redirecionamento e como configurá-lo corretamente:`
+
+- O redirecionamento é uma forma de informar ao Google que uma determinada URL não está mais disponível e foi movida para outro local. 
+- Existem três etapas para configurar o redirecionamento: 
+  - via servidor, através de respostas HTTP; `recomentado`
+  - através de meta tags no código HTML da página; 
+  ```html
+    <meta http-equiv="refresh" content="0; url=https://example.com/newLocation">
+  ```
+  - via JavaScript. 
+  
+- Recomenda-se utilizar o redirecionamento via servidor, pois é mais eficiente. 
+- Dependendo da ferramenta que você está utilizando, existem outras opções disponíveis. 
+
+Como programadores, é importante entendermos essas técnicas para implementar o redirecionamento corretamente.
+
+Para entender melhor o redirecionamento acesse o [suporte do google](https://developers.google.com/search/docs/crawling-indexing/301-redirects?hl=pt-br)
