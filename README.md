@@ -358,3 +358,17 @@
 Como programadores, é importante entendermos essas técnicas para implementar o redirecionamento corretamente.
 
 Para entender melhor o redirecionamento acesse o [suporte do google](https://developers.google.com/search/docs/crawling-indexing/301-redirects?hl=pt-br)
+
+### `Structured Data`
+
+  Structured Data(dados estruturados do Google):
+  
+  - Essa é uma forma de ajudar o Google a entender o tipo de conteúdo do seu site e como ele deve ser apresentado nos resultados de pesquisa. 
+  - Você pode criar dados estruturados usando ferramentas como:
+    - [WebCode.tools](https://WebCode.tools)
+    - [search.google](https://search.google.com/test/rich-results)
+    - [schema.org](https://schema.org/)
+  - O schema.org é uma comunidade aberta que fornece diretrizes e documentação para ajudar na criação desses dados. 
+  - Você pode testar seus dados estruturados usando a URL ou o snippet de código no schema.org. 
+
+Lembre-se de sempre atualizar-se sobre as melhores práticas e usar as ferramentas disponíveis para facilitar o processo.
