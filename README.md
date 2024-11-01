@@ -419,3 +419,27 @@ Lembre-se de sempre atualizar-se sobre as melhores práticas e usar as ferrament
       </body>
     </html>
   ```
+
+### `Título e descrição`
+
+- O Title deve ser único para cada página e definir claramente o objetivo da página. 
+- Evite repetir títulos em outras páginas do seu site, pois isso diminui a relevância para o SEO. 
+- O Description não afeta o ranqueamento nas pesquisas, mas é útil para explicar o conteúdo da página.
+  - Não repetir nas suas páginas para manter a relevância da página para o SEO.
+- Use a ferramenta [mangools](https://mangools.com/free-seo-tools/serp-simulator?ref=menu-kw) para verificar se o título e a descrição estão adequados. 
+- O Title e o Description são metatags que devem ser colocadas no cabeçalho da página.
+
+`Exemplo:`
+  ```html
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Presenteie quem você ama ou renove o guarda-roupa com a Loja Pink Padme. Aliando experiência, modernidade e preços acessíveis para toda a família.">
+        <title>Loja de roupas em Taubaté | P.P</title>
+      </head>
+      <body>
+      </body>
+    </html>
+  ```
