@@ -372,3 +372,23 @@ Para entender melhor o redirecionamento acesse o [suporte do google](https://dev
   - Você pode testar seus dados estruturados usando a URL ou o snippet de código no schema.org. 
 
 Lembre-se de sempre atualizar-se sobre as melhores práticas e usar as ferramentas disponíveis para facilitar o processo.
+
+### `Sitelinks`
+
+  Os Sitelinks são links agrupados que aparecem nos resultados de busca do Google.
+
+  - `Objetivo:` Ajudar os usuários a encontrar informações com mais eficiência.
+
+  - `Como funciona:` O Google utiliza um algoritmo de agrupamento de links para exibir esses Sitelinks.
+
+  - `Quando é indexado?:` Eles são indexados e aparecem quando são úteis para o usuário. 
+
+  - `Algumas melhores práticas para ter Sitelinks:`
+    Por ser um processo automático do Google, existem algumas melhores práticas para ajudar a aparição dessa seção.
+
+    - ter títulos e cabeçalhos relevantes e compactos, 
+    - Uma estrutura lógica de fácil navegação para os usuários, 
+    - Links para páginas importantes,
+    - Evitar conteúdo repetitivo. 
+
+  - `E para remover:` O Google também dá a dica de que é possível remover um Sitelink removendo a página ou utilizando a estratégia de noindex.
