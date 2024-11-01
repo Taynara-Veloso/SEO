@@ -392,3 +392,30 @@ Lembre-se de sempre atualizar-se sobre as melhores práticas e usar as ferrament
     - Evitar conteúdo repetitivo. 
 
   - `E para remover:` O Google também dá a dica de que é possível remover um Sitelink removendo a página ou utilizando a estratégia de noindex.
+
+### `Metatags`
+
+ As metatags são tags que ficam dentro do elemento `<head>` do seu documento HTML e fornecem informações sobre o conteúdo da página. Algumas das metatags que o Google considera são: 
+  - A definição do conjunto de caracteres utilizado, 
+  - A indicação de que o site é responsivo para dispositivos móveis, 
+  - Uma descrição da página, 
+  - A autoridade do site,
+  - A configuração do Safe Search. 
+
+  `Exemplo:`
+  ```html
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Author: T.V. Author, Illustrator: P. Picture, Category: Books, Price: $5.99, Length: 567 pages">
+        <meta name="google-site-verification" content="=nxGUDJ$QpAZ5l9Bsjdi102tLVC21AIh5d1Nl23908vVuFHs34=">
+        <title>Document</title>
+        <meta name="robots" content="noindex,nofollow">
+        <meta name="rating" content="adult">
+      </head>
+      <body>
+      </body>
+    </html>
+  ```
