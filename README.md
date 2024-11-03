@@ -443,3 +443,55 @@ Lembre-se de sempre atualizar-se sobre as melhores práticas e usar as ferrament
       </body>
     </html>
   ```
+#### `Google modifica títulos e descrições`
+
+  O Google pode alterar títulos que sejam:
+  - clickbaits, ou seja, títulos que não correspondem ao conteúdo da página. 
+  - Pode modificar títulos que sejam muito longos ou que contenham apenas palavras-chave. 
+  - Pode alterar as descrições das páginas para melhor atender aos usuários. 
+  - É importante entender essas modificações e criar títulos coerentes para melhorar o SEO. 
+  - Pode usar links internos da página para gerar títulos relevantes. 
+
+  Por fim, a importância de criar uma Meta Description é para ajudar os usuários a entenderem o conteúdo da página.
+
+### `Open Graph`
+
+  Open Graph são as meta-tags para as mídias sociais. 
+  Essas tags são importantes para controlar a aparência de um link compartilhado nas redes sociais, como:
+  - Facebook
+  - LinkedIn
+  - Twitter
+
+  O objetivo é tornar o conteúdo mais atrativo e explicativo, gerando engajamento e mais cliques para a página. 
+  Existem várias meta-tags disponíveis, mas as principais são:
+  - `og:title` — serve para fazer a indicação do título da página que será mostrada na mídia social;
+  - `og:description` — é útil para descrever de forma abreviada. Aparece logo abaixo do título;
+  - `og:image` — indica a imagem que será apresentada na hora de linkar o conteúdo na rede social;
+  - `og:type` — descreve o tipo de site de web que está sendo compartilhado;
+  - `og:url` — apresenta a url da página disponibilizada na rede social.
+
+  ![imgOg:Tags](/assets/ogTags.webp)
+
+  ```html
+    <meta property="og:title" content="descrever o título do artigo" />
+    <meta property="og:type" content="tipo de conteúdo" />
+    <meta property="og:image" content="url da imagem"/>
+    <meta property="og:image:width" content="1200"/>
+    <meta property="og:image:height" content="630"/>
+    <meta property="og:url" content="url do conteúdo"/>
+    <meta property="og:description" content="descrição do conteúdo"/>
+  ```
+
+  Além disso, também temos o Twitter Card, que funciona de forma semelhante ao Open Graph.
+
+  ```html
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="descrever o título do artigo" />
+    <meta name="twitter:description" content="descrição do conteúdo" />
+    <meta name="twitter:url" content="url do conteúdo" />
+    <meta name="twitter:site" content="@siteexample" />
+    <meta name="twitter:creator" content="@userexample" />
+    <meta name="twitter:image" content="https://images.com/image.jpg" />
+  ```
+
+  É importante testar as tags usando ferramentas como o [Facebook Debugger](https://webcode.tools/open-graph-generator/article) e o [Post Inspector](https://www.linkedin.com/post-inspector/) do LinkedIn para garantir que o compartilhamento esteja correto.
