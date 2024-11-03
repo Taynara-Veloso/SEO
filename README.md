@@ -495,3 +495,15 @@ Lembre-se de sempre atualizar-se sobre as melhores práticas e usar as ferrament
   ```
 
   É importante testar as tags usando ferramentas como o [Facebook Debugger](https://webcode.tools/open-graph-generator/article) e o [Post Inspector](https://www.linkedin.com/post-inspector/) do LinkedIn para garantir que o compartilhamento esteja correto.
+
+### `Tags de Texto`
+
+  As tags de texto são como a organização de um livro, e é importante estruturá-las corretamente para que o motor de busca entenda o conteúdo da página. 
+
+  - O `<h1>` é o título principal da página e deve ser semelhante ao título do head. 
+  - Os `<h2>` são subtítulos e podem ter sub-blocos com `<h3>`. 
+  - Os parágrafos são marcados com a tag `<p>`. 
+  - A tag `<strong>` é usada para dar ênfase ao texto. 
+  - A tag `<a>` é usada para criar links internos e externos.
+
+  Quanto mais links e menos dependência de estilos, melhor para o SEO.
