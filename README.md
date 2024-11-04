@@ -648,3 +648,15 @@ Lembre-se de sempre atualizar-se sobre as melhores práticas e usar as ferrament
   Ao aplicar o Lazy Load, podemos melhorar o desempenho do site e a pontuação de performance.
 
   ![imageNavegation](/assets/lazyload-facade-example.jpg)
+
+### `Mobile Friendly`
+
+  O Google dá grande importância ao conteúdo otimizado para dispositivos móveis, através da iniciativa Mobile First Indexing. 
+  
+  Recomenda-se o uso de estratégias como responsividade e [AMP (Accelerated Mobile Pages)](https://developers.google.com/amp?hl=pt-br) para melhorar a experiência do usuário em dispositivos móveis. 
+  
+  É essencial ter uma meta tag viewport e evitar bloqueios de recursos no robots.txt. 
+  
+  A ferramenta [Lighthouse](https://pagespeed.web.dev/) pode ser usada para analisar e melhorar a performance do site em dispositivos móveis. 
+  
+  Ao implementar essas estratégias, seu site estará mais amigável para dispositivos móveis e será melhor indexado pelo Google.
