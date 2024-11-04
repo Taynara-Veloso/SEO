@@ -507,3 +507,80 @@ Lembre-se de sempre atualizar-se sobre as melhores práticas e usar as ferrament
   - A tag `<a>` é usada para criar links internos e externos.
 
   Quanto mais links e menos dependência de estilos, melhor para o SEO.
+
+### `Navegação`
+
+  É fundamental que os visitantes consigam se encontrar facilmente e que o robô de busca também entenda a relevância das páginas. 
+  Como a navegação pode ser organizada de forma eficiente:
+
+  ![imageNavegation](/assets/navegation.jpg)
+
+  Para ser eficiente o usuário deve conseguir chegar ao destino em poucos cliques.
+
+  ![imageNavegation](/assets/responsive-navbar.png)
+  
+  `Navegação mobile friendly:`
+
+  No mobile é necessário usar um icon para guardar todos os items da navegação, como se fosse uma gaveta.
+  
+  ![imageNavegation](/assets/MobileFriendly.jpg)
+
+  #### `Breadcrumbs:`
+
+  Uma `navegação de trilha` fornece links para cada página anterior pela qual o usuário navegou e mostra a localização atual do usuário em um site.
+  - Ajudam tanto os usuários quanto os motores de busca. 
+  - É como migalhas pelo caminho
+
+  `Exemplo:`
+  ![imageNavegation](/assets/Breadcrumbs.png)
+  Para mais informações acesse a [Central de Pesquisa Google](https://developers.google.com/search/docs/appearance/structured-data/breadcrumb?hl=pt-br)
+  
+  `Página 404 coerente:`
+  - Não pode ser o fim da navegação.
+  - Precisa ter um link de redirecionamento
+
+  ![imageNavegation](/assets/404.webp)
+
+  `Navegação de Rodapé:`
+
+  A navegação de rodapé é uma função que permite que os usuários interajam 
+  com um segmento de detalhes de um formulário. 
+  O rodapé de um site, ou footer, é a área final das páginas de um site e 
+  geralmente contém informações como:
+  -  Endereço
+  -  Contato
+  -  Links para páginas importantes
+  -  Políticas de privacidade
+  -  Termos e condições de troca e devolução
+  -  Selos de segurança
+  -  Redes sociais
+
+  ![imageNavegation](/assets/bootstrap-footer.jpg)
+
+  #### `Recomendações sobre navegação`
+
+  - Não coloque qualquer coisa na navegação principal
+    - Tem que ser simples.
+    - Tem que ser fácil para o usuário navegar.
+  - Planejar a hierarquia da navegação
+    - Tópicos
+    - Categorias
+  - Utilizar textos e HTML semântico
+    - `<nav>`
+    - `<ul>`
+    - `<li>`
+    - `<a>`
+    ```html
+      <nav class="container">
+        <ul class="header">
+          <li><a href="#">Home</a></li>
+          <li><a href="News">News</a></li>
+          <li><a href="Blog">Blog</a></li>
+          <li><a href="Courses">Courses</a></li>
+          <li><a href="ContactUs">Contact Us</a></li>
+        </ul>
+      </nav>
+    ```
+  - Página exclusiva
+    - Lista estruturada que lista todas as páginas do seu site
+    - É um mapa do site em HTML para o usuário
