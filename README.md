@@ -619,3 +619,32 @@ Lembre-se de sempre atualizar-se sobre as melhores práticas e usar as ferrament
         fetchpriority="high" 
       />
     ```
+
+### `Lazy Load Third Party Content (Carregamento lento de conteúdo de terceiros)`
+
+  Lazy Load é uma estratégia para carregar e ler conteúdos de terceiros, como embeds do YouTube ou integrações com redes sociais.
+
+  [Carregamento lento de conteúdo de terceiros](https://developer.chrome.com/docs/lighthouse/performance/third-party-facades?hl=pt-br):
+
+    significa atrasar o carregamento de conteúdo externo, como vídeos incorporados ou postagens em mídias sociais, até que o usuário realmente precise vê-lo na página, normalmente rolando perto dele, melhorando assim a velocidade de carregamento inicial da página, carregando apenas o conteúdo crítico primeiro. 
+
+  `Benefícios:`
+
+  Reduz o tempo de carregamento inicial da página, especialmente ao lidar com grandes scripts de terceiros que não são imediatamente visíveis para o usuário. 
+
+  #### Como funciona:
+  `Espaços reservados:` 
+
+    Um elemento de espaço reservado é exibido no local onde o conteúdo de terceiros estará, que se parece com o conteúdo real, mas não exige o carregamento de scripts pesados. 
+
+  `Gatilho de interação do usuário:` 
+
+    Quando o usuário interage com o espaço reservado (como clicar nele ou rolar perto dele), o conteúdo real de terceiros é carregado dinamicamente.
+
+  A ideia é usar uma `fachada`, um elemento estático que se parece com o conteúdo desejado, mas sem as funcionalidades completas. Isso adia o carregamento e permite identificar e tratar o tipo de conteúdo. 
+  
+  Para identificar, podemos usar o [pagespeed.web.dev.](https://pagespeed.web.dev/) 
+  
+  Ao aplicar o Lazy Load, podemos melhorar o desempenho do site e a pontuação de performance.
+
+  ![imageNavegation](/assets/lazyload-facade-example.jpg)
