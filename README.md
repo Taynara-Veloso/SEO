@@ -584,3 +584,38 @@ Lembre-se de sempre atualizar-se sobre as melhores práticas e usar as ferrament
   - Página exclusiva
     - Lista estruturada que lista todas as páginas do seu site
     - É um mapa do site em HTML para o usuário
+
+### `Otimização de imagens`
+
+  - Imagens são pesadas e podem deixar o site lento, então é importante trabalhar com tamanhos adequados e responsivos.
+
+  - Além disso, é recomendado utilizar formatos mais modernos, como `avif` e `webp`, que reduzem o tamanho da imagem sem perder qualidade. 
+
+  - A estratégia de `Lazy Loading` também é útil, carregando as imagens apenas quando são visíveis na página. 
+
+  - Definir largura e altura da imagem ajuda a evitar problemas de layout. 
+
+  - Atributos como:
+    - source
+    - alt
+    - source set `conjunto de imagens`
+    - sizes 
+    - loading `lazy | eager`
+    - decoding `sync | async | auto`
+    - fetch priority `high | low | auto`
+  
+    também são importantes para otimizar as imagens. 
+
+    ```html
+      <img 
+        src="/assets/foto_example.avif"
+        alt="Taynara Veloso"
+        srcset="/assets/foto_example.avif 320w /assets/foto_example.avif 402w"
+        sizes="(min-width: 402px) 402px, 100vw"
+        width="402"
+        height="402"
+        loading="lazy"
+        decoding="async"
+        fetchpriority="high" 
+      />
+    ```
